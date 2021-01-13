@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+ 
+ul{
+    list-style-type: none;
+}
+
+li{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-weight: 7  00;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.grid > div{
+    padding: 50px;
+}
+
+.section1{
+    grid-column: 1 / span 3;
+    line-height: 2;
+}
+
+.section1 h1{
+    color: rgb(74, 190, 189);    
+}
+
+.section1 h2{
+    padding-bottom: 20px;
+    color: rgb(213, 232, 109);
+}
+
+.section1 p{
+    color: rgb(217, 223, 230);
+    line-height: 2;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.section1-content{
+    max-width: 600px;
+}
+
+.section2 h2, p, .section3 h2, p{
+    color: white;
+}
+
+.section2 h2, .section3 h2{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.section2{
+    background: rgb(43, 179, 177);
+}
+
+.section2 span{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn{
+    background: rgb(191, 223, 50);
+    color: white;
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: .5em;
+    box-shadow: 1px 1px 2px #333;
+    font-size: 18px;
+}
+
+.section3{
+    background: rgb(74, 190, 189);
+}
+
+.section3 ul li{
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 720px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .section1 {
+        grid-column: 1;
+    }
+}
+
